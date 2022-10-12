@@ -1,18 +1,19 @@
 {
-  "name": "@joinflux/firebase-remote-config",
+  "name": "@felipeclopes/firebase-remote-config",
   "version": "0.5.2",
   "description": "A native plugin for firebase remote config",
-  "homepage": "https://github.com/joinflux/firebase-remote-config",
+  "homepage": "https://github.com/felipeclopes/firebase-remote-config",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "prepublishOnly": "npm run build",
-    "npm-publish": "np"
+    "npm-publish": "np --any-branch --no-2fa"
   },
-  "author": "Priyank Patel <priyank.patel@stackspace.ca>",
+  "author": "Felipe C Lopes <felipelopes10@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "firebase": "^8.4.1",
@@ -38,7 +39,7 @@
     "dist/",
     "ios/",
     "android/",
-    "JoinfluxFirebaseRemoteConfig.podspec"
+    "FelipeclopesFirebaseRemoteConfig.podspec"
   ],
   "keywords": [
     "capacitor",
@@ -55,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joinflux/firebase-remote-config"
+    "url": "https://github.com/felipeclopes/firebase-remote-config"
   },
   "bugs": {
-    "url": "https://github.com/joinflux/firebase-remote-config/issues"
+    "url": "https://github.com/felipeclopes/firebase-remote-config/issues"
   }
 }
